@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <title>kmc page</title>
+  <style>
+    #color_div {
+      background-color: skyblue;
+    }
+
+    .image {
+      width: 70px;
+      height: 40px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</head>
+<!-- Button trigger modal -->
+
+
+<body id="color_div">
+
+  <div class="p-3 text-center">
+    <div class="bg_info">
+      <h1><img src="logokmc.png" class="image"><SPAN id="college_name">KMC COLLEGE</SPAN></h1>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          <a class="nav-link" href="studentdetail.html">STUDENT DETAIL</a>
+          <a class="nav-link" href="register.html">SIGNUP</a>
+          <a class="nav-link" href="login.html">LOGIN</a>
+          <a class="nav-link" href="increase.html">INCREASE</a>
+          <a class="nav-link" href="calculator.html" >CALCULATOR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div class="alert alert-info" role="alert">
+    <h3>Notice</h3>
+    <hr>
+    BCA Exam routine<sup></sup>
+    <br>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      View Notice Details
+    </button>
+   
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="kmcstudent.jpg" class="d-block w-100" height="350" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="student2.jpg" class="d-block w-100" height="350" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <button type="button" id="Blue" class="btn btn-primary">Change to Blue</button>
+  <button type="button" id="Black" class="btn btn-danger">Change to Defult</button><br><br>
+  <div class="p-3 text-center">
+    <h2><b><u>ABOUT US</u></b></h2>
+    <div class="college" id="change">
+      <div class="paragraph_content"> 
+        
+        <p>Kathmandu Model College continues to be a top ranking college in the private sector </p>
+        <p>with excellent scores in BBA, BBS, BBM, BCA, and BA/BSW programs. In Master's level,</p>
+        <p>KMC is running MBS and MA English program with affiliation from Tribhuvan University.</p>
+        <p>KAA is the common organization of more than 15000+ students and professionals who</p>
+        <p>completed their study at KMSS and are currently associated with different national and</p>
+        <p>international institutions. At KMSS, there are array of clubs available for students to join and</p>
+        <p>widen their horizon and experience.</p>
+        <p>KMC School is the junior wing of Kathmandu Model College (KMC), one of the most renowned colleges of Nepal.
+      </div>
+    </p>
+    </div>
+  </div>
+ 
+  <div class="modal" tabindex="-1" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Exam Notice</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="download.jpg">
+        </div>
+        <div class="modal-footer">
+        
+          <button type="button" class="btn btn-primary"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  <div class="p-3 text-center">
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+  </div>
+  <hr>
+  <footer class="text-center bg-info p-3">
+    <p>KMC College</p>
+    <p><a href="kmcen.edu.np@gmail.com">kmcen.edu.np@gmail.com</a></p>
+  </footer>
+</body>
+
+<script>
+ const blue =document.getElementById("Blue");
+ const black =document.getElementById("Black");
+ const change =document.getElementById("change");
+
+blue.addEventListener('click', function onClick(){
+  change.style.color ="blue"
+});
+black.addEventListener('click', function onClick(){
+  change.style.color=""
+});
+
+</script>
+<script>
+ var paragraphs = document.getElementsByClassName("college");
+  for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = "black";
+  }
+  
+</script>
+
+</html>
